@@ -3,10 +3,10 @@ Gluttonberg::PageDescription.add do
   # home page page description
   page :home do
     label "Home"
-    description "The homepage, with selected features."
+    description "Homepage"
     home true
     view "home"
-    layout "application"    
+    layout "public"
   end
   
   # page description with two three sections.
@@ -14,7 +14,7 @@ Gluttonberg::PageDescription.add do
     label "Newsletter"
     description "Newsletter Page"
     view "newsletter"
-    layout "application"
+    layout "public"
     
     section :title do
       label "Title"
@@ -39,7 +39,7 @@ Gluttonberg::PageDescription.add do
     description "Examples Page"
     
     rewrite_to 'examples'
-    layout "application"
+    layout "public"
   end
   
   # page description with a single content section
@@ -47,7 +47,7 @@ Gluttonberg::PageDescription.add do
     label "About"
     description "About Page"
     view "about"
-    layout "application"
+    layout "public"
     section :top_content do
       label "Content"
       type :html_content
@@ -59,7 +59,7 @@ Gluttonberg::PageDescription.add do
     label "Site Map"
     description "Site Map"
     view "sitemap"
-    layout "application"
+    layout "public"
   end
         
 end

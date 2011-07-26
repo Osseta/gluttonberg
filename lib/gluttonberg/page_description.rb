@@ -26,7 +26,7 @@ module Gluttonberg
         :name       => name,
         :home       => false,
         :behaviour  => :default,
-        :layout     => "default",
+        :layout     => "public",
         :view       => "default"
       }
       @sections = {}

@@ -16,7 +16,7 @@ module Gluttonberg
         if request.xhr?
           render :template => template_path, :layout => false
         else
-          render :template => template_path
+          render :template => template_path, :layout => page.layout
         end
       end
       
